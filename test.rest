@@ -1,0 +1,2 @@
+GET http://localhost:3001/author
+GET http://localhost:3001/book

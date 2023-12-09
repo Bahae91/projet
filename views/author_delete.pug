@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    h1 Supprimer un auteur
+    p Entrez l'ID de l'auteur à supprimer:
+    form(action="/author_delete", method="post")
+        input(type="text", name="authorId")
+        button(type="submit") Supprimer

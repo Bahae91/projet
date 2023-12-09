@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+    h1= author.name
+    p Age: #{author.age}
+    p Nationality: #{author.nationality}
+
+    form(action=`/authors/${author.id}` method="POST")
+        input(type="hidden" name="_method" value="DELETE")
+        input(type="submit" value="Delete Author")
